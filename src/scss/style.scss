@@ -25,23 +25,40 @@
 	}
 
 	.overlay {
-		width: 186px;
+		text-align: center;
+		width: 176px;
 		top: 190px;
 		left: 347px;
+		padding: 0 5px;
 		visibility: hidden;
 		text-transform: uppercase;
 		-webkit-animation-name: media-library-overlay;
 		i {
 			font-style: normal;
+			font-family: Percocons;
+		}
+		.icon-bubble:before {
+			content: "\e022";
+		}
+		.icon-info:before {
+			content: "\e089";
+		}
+		.icon-edit:before {
+			content: "\e028";
 		}
 		span {
 			display: inline-block;
 			background: #fff;
 			font-size: 13px;
-			font-family: Futura;
+			font-family: 'Futura W01 Bold', Arial, sans-serif;
 			padding: 6px 10px;
 			font-size: 13px;
 			line-height: 1.38461541;
+			color: #999;
+			&.orange {
+				color: #fff;
+				background: #f16421;
+			}
 		}
 	}
 
