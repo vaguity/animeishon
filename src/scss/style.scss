@@ -10,7 +10,7 @@
 
 #media-library-container {
 	width: 100%;
-	padding: 10px 0;
+	// padding: 10px 0;
 	background: #f9f9f9;
 	-webkit-animation-duration: 20s;
 	-webkit-animation-delay: 2s;
@@ -100,11 +100,16 @@
 	.cursor {
 		position: absolute;
 		visibility: hidden;
-		width: 5px;
-		height: 5px;
-		border: 1px solid #fff;
-		background-color: #f16421;
-		box-shadow: 0 0 30px 1px #333;
+		width: 20px;
+		height: 20px;
+
+		background-image: url('../img/hand-cursor.png');
+		background-repeat: no-repeat;
+		background-size: contain;
+		// border: 1px solid #fff;
+		// background-color: #f16421;
+		// box-shadow: 0 0 30px 1px #333;
+
 		-webkit-animation-name: media-library-cursor;
 	}
 
@@ -213,15 +218,15 @@
 	0% {
 		visibility: hidden;
 	}
-	10% {
+	13% {
 		visibility: hidden;
 	}
-	11% {
+	14% {
 		top: 150px;
 		left: 50px;
 		visibility: visible;
 	}
-	15% {
+	20% {
 		top: 200px;
 		left: 360px;
 	}
@@ -269,7 +274,7 @@
 		top: 380px;
 		left: 280px;
 	}
-	82% {
+	84% {
 		top: 380px;
 		left: 280px;
 		visibility: hidden;
@@ -288,10 +293,10 @@
 	}
 
 	// 4s
-	13% {
+	18.9% {
 		visibility: hidden;
 	}
-	14% {
+	19% {
 		visibility: visible;
 	}
 
