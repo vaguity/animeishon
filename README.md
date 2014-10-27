@@ -1,0 +1,62 @@
+// Template:
+
+// 0s
+0% {
+	// MEDIA LIBRARY SCROLL VISIBLE
+}
+
+// 2s
+10% {
+	// CURSOR VISIBLE, MOVE
+}
+
+// 4s
+20% {
+	// OVERLAY VISIBLE
+}
+
+// 6s
+30% {
+	// HIDE CURSOR
+	// HIDE OVERLAY
+	// HIDE MEDIA LIBRARY
+	// EDITOR-1 VISIBLE
+}
+
+// 8s
+40% {
+	// EDITOR-1 HIDE
+	// EDITOR-2A VISIBLE
+}
+
+// 10s
+50% {
+	// EDITOR-2A HIDE
+	// EDITOR-2B VISIBLE
+}
+
+// 12s
+60% {
+	// EDITOR-2B HIDE
+	// EDITOR-3 VISIBLE
+}
+
+// 14s
+70% {
+	// EDITOR-3 HIDE
+	// EDITOR-4 VISIBLE
+}
+
+80% {
+	// EDITOR-4 HIDE
+	// EDITOR-5 VISIBLE
+}
+
+90% {
+	// EDITOR-5 HIDE
+}
+
+// 20s
+100% {
+
+}
