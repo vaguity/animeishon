@@ -8,10 +8,22 @@
 
 // ------------------------------------
 
+#media-library-container {
+	width: 100%;
+	padding: 10px 0;
+	background: #f9f9f9;
+	-webkit-animation-duration: 20s;
+	-webkit-animation-delay: 2s;
+	-webkit-animation-iteration-count: infinite;
+	-webkit-animation-fill-mode: forwards;
+	-webkit-animation-name: media-library-container;
+}
+
 #media-library-animation {
 	position: relative;
 	width: 1080px;
 	height: 500px;
+	margin: 0 auto;
 
 	.media-library-scroll, .overlay, .cursor, .media-library-editor, .media-library-nav {
 		position: absolute;
@@ -88,8 +100,8 @@
 	.cursor {
 		position: absolute;
 		visibility: hidden;
-		width: 10px;
-		height: 10px;
+		width: 5px;
+		height: 5px;
 		border: 1px solid #fff;
 		background-color: #f16421;
 		box-shadow: 0 0 30px 1px #333;
@@ -131,6 +143,26 @@
 	}
 }
 
+@-webkit-keyframes media-library-container {
+	0% {
+		background: #f9f9f9;
+	}
+	29% {
+		background: #f9f9f9;
+	}
+	29.1% {
+		background: #3c3c3e;
+	}
+	89.9% {
+		background: #3c3c3e;
+	}
+	90% {
+		background: #f9f9f9;
+	}
+	100% {
+		background: #f9f9f9;
+	}
+}
 
 @-webkit-keyframes media-library-scroll {
 	// 0s
