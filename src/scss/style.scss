@@ -13,7 +13,7 @@
 	width: 1080px;
 	height: 500px;
 
-	.media-library-scroll, .overlay, .cursor, .media-library-editor {
+	.media-library-scroll, .overlay, .cursor, .media-library-editor, .media-library-nav {
 		position: absolute;
 		top: 0;
 		-webkit-animation-duration: 20s;
@@ -65,7 +65,16 @@
 		}
 	}
 
-
+	.media-library-nav {
+		width: 100%;
+		height: 43px;
+		background-image: url('../img/media_library_navbar.jpg');
+		background-size: cover;
+		background-repeat: no-repeat;
+		position: absolute;
+		z-index: 100;
+		-webkit-animation-name: media-library-nav;
+	}
 
 	.media-library-scroll {
 		width: 100%;
@@ -144,11 +153,27 @@
 	90% {
 		background-position: top;
 	}
-
 	// 20s
 	100% {
 		background-position: top;
-		// visibility: visible;
+	}
+}
+
+@-webkit-keyframes media-library-nav {
+	0% {
+		visibility: visible;
+	}
+	28% {
+		visibility: visible;
+	}
+	29% {
+		visibility: hidden;
+	}
+	90% {
+		visibility: hidden;
+	}
+	100% {
+		visibility: visible;
 	}
 }
 
