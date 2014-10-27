@@ -1,0 +1,7 @@
+.container {
+	@include container(80%);
+}
+
+header, .content, footer {
+	@include span(12 of 12);
+}

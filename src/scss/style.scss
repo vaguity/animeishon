@@ -1,0 +1,176 @@
+// ------------------------------------
+// Core imports
+// ------------------------------------
+
+@import 'susy';
+@import 'breakpoint';
+@import 'partials/base';
+
+// ------------------------------------
+
+#media-library-animation {
+
+	max-width: 1180px;
+
+	.media-library-scroll {
+		height: 400px;
+		width: 100%;
+		background-image: url('../img/media_library.png');
+		background-repeat: no-repeat;
+		background-size: cover;
+		-webkit-animation-name: media-library-scroll;
+		-webkit-animation-duration: 20s;
+		// -webkit-animation-timing-function: steps(20, end) infinite;
+		-webkit-animation-fill-mode: forwards;
+		-webkit-animation-delay: 5s;
+	}
+
+
+
+	.overlay {
+		visibility: hidden;
+		text-transform: uppercase;
+		-webkit-animation-name: media-library-overlay;
+		-webkit-animation-duration: 20s;
+		// -webkit-animation-timing-function: steps(20, start);
+		-webkit-animation-fill-mode: forwards;
+		-webkit-animation-delay: 5s;
+
+	}
+
+	.cursor {
+		visibility: hidden;
+		width: 10px;
+		height: 10px;
+		background-color: #f16421;
+		position: absolute;
+		-webkit-animation-name: media-library-cursor;
+		-webkit-animation-duration: 20s;
+		// -webkit-animation-timing-function: steps(20, start);
+		-webkit-animation-fill-mode: forwards;
+		-webkit-animation-delay: 5s;
+
+	}
+
+	.media-library-crop {
+		height: 400px;
+		width: 100%;
+		background-image: url('../img/predator_crop.png');
+		background-repeat: no-repeat;
+		background-size: cover;
+		visibility: hidden;
+		-webkit-animation-name: media-library-crop;
+		-webkit-animation-duration: 20s;
+		// -webkit-animation-timing-function: steps(20, end) infinite;
+		-webkit-animation-fill-mode: forwards;
+		-webkit-animation-delay: 5s;
+
+	}
+
+}
+
+
+
+@-webkit-keyframes media-library-scroll {
+	// scroll down media library
+	// hover over image (move mouse, place overlay)
+	// click edit
+	// open predator, crop for twitter
+	// apply logo
+
+	// 0s
+	0% {
+		background-position: top;
+	}
+
+	// 2s
+	10% {
+		background-position: 80%;
+	}
+
+	29% {
+		visibility: visible;
+	}
+	30% {
+		visibility: hidden;
+	}
+
+	// 20s
+	100% {
+		background-position: 80%;
+		visibility: hidden;
+	}
+}
+
+@-webkit-keyframes media-library-cursor {
+	0% {
+		visibility: hidden;
+	}
+	10% {
+		visibility: hidden;
+	}
+	11% {
+		visibility: visible;
+		top: 0px;
+		left: 100px;
+	}
+	20% {
+		top: 50px;
+		left: 150px;
+	}
+	30% {
+		visibility: hidden;
+	}
+	100% {
+		visibility: hidden;
+	}
+}
+
+@-webkit-keyframes media-library-overlay {
+	// 0s
+	0% {
+		visibility: hidden;
+	}
+
+	// 4s
+	20% {
+		visibility: hidden;
+	}
+	21% {
+		visibility: visible;
+	}
+
+	// 6s
+	30% {
+		visibility: hidden;
+	}
+
+	// 20s
+	100% {
+		visibility: hidden;
+	}
+}
+
+@-webkit-keyframes media-library-crop {
+	// 0s
+	0% {
+		visibility: hidden;
+	}
+
+	// 6s
+	30% {
+		visibility: hidden;
+	}
+	31% {
+		visibility: visible;
+	}
+
+	50% {
+		visibility: hidden;
+	}
+
+	// 20s
+	100% {
+		visibility: hidden;
+	}
+}
