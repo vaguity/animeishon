@@ -24,7 +24,7 @@
 	position: relative;
 	margin: 0 auto;
 	width: 1080px;
-	height: 500px;
+	height: 600px;
 
 	.media-library-scroll, .overlay, .cursor, .media-library-editor, .media-library-nav {
 		position: absolute;
@@ -38,15 +38,15 @@
 	}
 
 	.overlay {
-		top: 300px;
+		top: 500px;
 		left: 347px;
 		visibility: hidden;
-		width: 166px;
 		margin: 0 10px;
-		background-image: url('../img/postbuttons.png');
-		background-repeat: no-repeat;
-		background-size: contain;
+		width: 166px;
 		height: 24px;
+		background-image: url('../img/postbuttons.png');
+		background-size: contain;
+		background-repeat: no-repeat;
 		-webkit-animation-name: media-library-overlay;
 	}
 
@@ -63,7 +63,7 @@
 
 	.media-library-scroll {
 		width: 100%;
-		height: 500px;
+		height: 600px;
 		background-image: url('../img/media_library.jpg');
 		background-size: cover;
 		background-repeat: no-repeat;
@@ -87,7 +87,7 @@
 	.media-library-editor {
 		visibility: hidden;
 		width: 100%;
-		height: 500px;
+		height: 600px;
 		background-position: center;
 		background-size: cover;
 		background-repeat: no-repeat;
@@ -193,20 +193,20 @@
 		visibility: hidden;
 	}
 	14% {
-		top: 150px;
+		top: 350px;
 		left: 50px;
 		visibility: visible;
 	}
 	20% {
-		top: 300px;
+		top: 510px;
 		left: 360px;
 	}
 	29% {
-		top: 300px;
+		top: 510px;
 		left: 360px;
 	}
 	32% {
-		top: 300px;
+		top: 510px;
 		left: 360px;
 	}
 	35% {
