@@ -1,0 +1,7 @@
+Timing of the cursor moving (before it stops)
+State change updates (including 'Apply')
+
+media library scroll
+hover state
+active state
+9 editor frames
