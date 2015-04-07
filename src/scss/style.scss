@@ -26,56 +26,14 @@
 	width: 1080px;
 	height: 600px;
 
-	.media-library-scroll, .overlay, .overlay-active, .cursor, .media-library-editor, .media-library-nav {
+	.media-library-editor {
 		position: absolute;
 		top: 0;
-		-webkit-animation-duration: 22s;
+		-webkit-animation-duration: 20s;
 		-webkit-animation-delay: 2s;
 		-webkit-animation-iteration-count: infinite;
 		-webkit-animation-fill-mode: forwards;
 		// -webkit-animation-timing-function: steps(20, end) infinite;
-	}
-
-	.overlay, .overlay-active {
-		top: 500px;
-		left: 347px;
-		visibility: hidden;
-		margin: 0 10px;
-		width: 166px;
-		height: 24px;
-		background-size: contain;
-		background-repeat: no-repeat;
-
-	}
-	.overlay {
-		background-image: url('../img/postbuttons.png');
-		-webkit-animation-name: media-library-overlay;
-
-	}
-
-	.overlay-active {
-		background-image: url('../img/postbuttons_active.png');
-		-webkit-animation-name: media-library-overlay-active;
-	}
-
-	.media-library-nav {
-		position: absolute;
-		z-index: 100;
-		width: 100%;
-		height: 39px;
-		background-image: url('../img/media_library_navbar.jpg');
-		background-size: contain;
-		background-repeat: no-repeat;
-		-webkit-animation-name: media-library-nav;
-	}
-
-	.media-library-scroll {
-		width: 100%;
-		height: 600px;
-		background-image: url('../img/media_library.jpg');
-		background-size: cover;
-		background-repeat: no-repeat;
-		-webkit-animation-name: media-library-scroll;
 	}
 
 	.cursor {
@@ -136,73 +94,6 @@
 	.media-library-editor-9 {
 		background-image: url('../img/editor-9.png');
 		-webkit-animation-name: media-library-editor-9;
-	}
-}
-
-@-webkit-keyframes media-library-container {
-	0% {
-		background: #f9f9f9;
-	}
-	// Tighten this up somehow
-	15.9% {
-		background: #f9f9f9;
-	}
-	16% {
-		background: #3c3c3e;
-	}
-	89.9% {
-		background: #3c3c3e;
-	}
-	90% {
-		background: #f9f9f9;
-	}
-	100% {
-		background: #f9f9f9;
-	}
-}
-
-@-webkit-keyframes media-library-scroll {
-	// 0s
-	0% {
-		background-position: top;
-	}
-
-	// 2s
-	10% {
-		background-position: 0 -680px;
-	}
-
-	15% {
-		visibility: visible;
-	}
-	30% {
-		visibility: hidden;
-		background-position: 0 -680px;
-	}
-	90% {
-		background-position: top;
-	}
-	// 20s
-	100% {
-		background-position: top;
-	}
-}
-
-@-webkit-keyframes media-library-nav {
-	0% {
-		visibility: visible;
-	}
-	15.9% {
-		visibility: visible;
-	}
-	16% {
-		visibility: hidden;
-	}
-	90% {
-		visibility: hidden;
-	}
-	100% {
-		visibility: visible;
 	}
 }
 
@@ -276,51 +167,6 @@
 	}
 }
 
-@-webkit-keyframes media-library-overlay {
-	// 0s
-	0% {
-		visibility: hidden;
-	}
-
-	10.4% {
-		visibility: hidden;
-	}
-	10.5% {
-		visibility: visible;
-	}
-	14% {
-		visibility: hidden;
-	}
-
-	// 20s
-	100% {
-		visibility: hidden;
-	}
-}
-
-
-@-webkit-keyframes media-library-overlay-active {
-	0% {
-		visibility: hidden;
-	}
-
-	13.9% {
-		visibility: hidden;
-	}
-
-	14% {
-		visibility: visible;
-	}
-
-	16% {
-		visibility: hidden;
-	}
-
-	100% {
-		visibility: hidden;
-	}
-}
-
 @-webkit-keyframes media-library-editor-1 {
 	0% {
 		visibility: hidden;
@@ -331,84 +177,63 @@
 	17% {
 		visibility: visible;
 	}
-
 	40% {
 		visibility: hidden;
 	}
-
-	// 20s
 	100% {
 		visibility: hidden;
 	}
 }
 
 @-webkit-keyframes media-library-editor-2 {
-	// 0s
 	0% {
 		visibility: hidden;
 	}
-
-	// 6s
 	39% {
 		visibility: hidden;
 	}
 	40% {
 		visibility: visible;
 	}
-
 	50% {
 		visibility: hidden;
 	}
-
-	// 20s
 	100% {
 		visibility: hidden;
 	}
 }
 
 @-webkit-keyframes media-library-editor-3 {
-	// 0s
 	0% {
 		visibility: hidden;
 	}
-
-	// 6s
 	49% {
 		visibility: hidden;
 	}
 	50% {
 		visibility: visible;
 	}
-
 	60% {
 		visibility: hidden;
 	}
-
-	// 20s
 	100% {
 		visibility: hidden;
 	}
 }
 
 @-webkit-keyframes media-library-editor-4 {
-	// 0s
 	0% {
 		visibility: hidden;
 	}
-
-	// 6s
 	59% {
 		visibility: hidden;
 	}
 	60% {
 		visibility: visible;
 	}
-
 	70% {
 		visibility: hidden;
 	}
-
-	// 20s
 	100% {
 		visibility: hidden;
 	}
@@ -416,12 +241,9 @@
 
 
 @-webkit-keyframes media-library-editor-5 {
-	// 0s
 	0% {
 		visibility: hidden;
 	}
-
-	// 6s
 	69% {
 		visibility: hidden;
 	}
@@ -432,20 +254,15 @@
 	80% {
 		visibility: hidden;
 	}
-
-	// 20s
 	100% {
 		visibility: hidden;
 	}
 }
 
 @-webkit-keyframes media-library-editor-6 {
-	// 0s
 	0% {
 		visibility: hidden;
 	}
-
-	// 6s
 	79% {
 		visibility: hidden;
 	}
@@ -457,19 +274,15 @@
 		visibility: hidden;
 	}
 
-	// 20s
 	100% {
 		visibility: hidden;
 	}
 }
 
 @-webkit-keyframes media-library-editor-6 {
-	// 0s
 	0% {
 		visibility: hidden;
 	}
-
-	// 6s
 	79% {
 		visibility: hidden;
 	}
@@ -480,8 +293,6 @@
 	90% {
 		visibility: hidden;
 	}
-
-	// 20s
 	100% {
 		visibility: hidden;
 	}
